@@ -37,8 +37,6 @@ export default class W2 extends LightningElement {
       }
       this.todoTask.splice(todoTaskIndex, 1);
 
-
    }
-
 
 }

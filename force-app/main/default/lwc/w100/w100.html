@@ -1,14 +1,14 @@
 <template>
-   <lightning-card title="Inputs">
+   <lightning-card title="Inputs" padding="around-large">
       <div class="slds-grid slds-gutters">
          <div class="slds-col">
-           <span><lightning-input title="Isim" label="Isim" placeholder="enter a Name" type="text" onchange={IsimHandler}></lightning-input></span>
+           <span><lightning-input title="Isim" label="Isim" placeholder="enter a Name" type="text" onchange={IsimHandler} padding="around-large"></lightning-input></span>
          </div>
          <div class="slds-col">
-            <lightning-input title="Soyisim" label="Soyisim" placeholder="enter a LastName" type="text" onchange={SoyisimHandler}></lightning-input>
+            <lightning-input title="Soyisim" label="Soyisim" placeholder="enter a LastName" type="text" onchange={SoyisimHandler} padding="around-large"></lightning-input>
          </div>
          <div class="slds-col">
-            <lightning-input title="Yas" label="Yas" placeholder="enter a Number" type="number" onchange={YasHandler} ></lightning-input>
+            <lightning-input title="Yas" label="Yas" placeholder="enter a Number" type="number" onchange={YasHandler} padding="around-small"></lightning-input>
          </div>
       </div>
    </lightning-card>
@@ -30,15 +30,14 @@
 
 
 
-
    <lightning-card class="slds-align_absolute-center" title="SONUC" label="Sonuc">
       <div class="slds-align_absolute-center" style="height:5rem">
         
    <div if:true={change}>
       <h1 class="slds-text-heading_large">{sonuc}</h1>
    </div>    
-       <div if:false={change}>
-         <h1 class="slds-text-heading_large">{YeniIsim} - {YeniSoyisim} - {YeniYas}</h1>
+       <div if:false={change} >
+         <h1 class="slds-text-heading_large" >{YeniIsim} - {YeniSoyisim} - {YeniYas}</h1>
        </div>  
       </div>
    </lightning-card>
